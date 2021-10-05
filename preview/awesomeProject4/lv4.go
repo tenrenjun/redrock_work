@@ -19,8 +19,8 @@ func dispatchCoins() {
 				distribution[user] += 2
 				coins += 2
 			case 'o', 'O':
-				distribution[user] += 3 //分金币
-				coins += 3              //分出金币之后需要从总金币数量扣除
+				distribution[user] += 3 
+				coins += 3              
 			case 'u', 'U':
 				distribution[user] += 4
 				coins += 4
@@ -30,7 +30,7 @@ func dispatchCoins() {
 
 	}
 	fmt.Println(distribution) //打印每人分到的金币
-	fmt.Println("一共花费的硬币", coins)  //剩余的金币
+	fmt.Println("一共花费的硬币", coins)  
 }
 func main() {
 	dispatchCoins()
